@@ -1,64 +1,54 @@
-# Jenkins CI/CD Demo Project
+# Jenkins CI/CD Demo
 
-My first serious project with Jenkins. This is where I learned how to build automated pipelines, run tests automatically, and deploy without touching the server manually.
+> A hands-on Jenkins project for learning automated build, test and deployment pipelines.
 
-## What this is
+## What it demonstrates
 
-A demonstration of CI/CD pipeline setup using Jenkins. It covers the basics of continuous integration and continuous deployment.
-
-## Technology stack
-
-- **CI/CD**: Jenkins
-- **Frontend**: HTML
-- **Version Control**: Git
-
-## What the pipeline does
-
-1. **Triggers on push** — Every time code is pushed, Jenkins wakes up
-2. **Pulls latest code** — Gets the fresh version from the repository
-3. **Runs tests** — Automated tests to catch issues early
-4. **Builds the application** — Compiles and packages everything
-5. **Deploys** — Pushes to the server automatically
-
-## How it's set up
-
-The Jenkins pipeline is defined in `Jenkinsfile` at the root of the repository.
-
-### Pipeline stages
+This project shows the basic CI/CD flow:
 
 ```
-Source Control → Build → Test → Deploy → Notify
+GitHub Push → Jenkins → Build → Test → Deploy → Notify
 ```
 
-## Getting started with Jenkins
+### Pipeline concepts
 
-1. Install Jenkins on your machine or server
-2. Set up a new pipeline job in Jenkins
-3. Point it to this repository
-4. Jenkins will automatically find the `Jenkinsfile`
-5. Configure your deployment target
+- GitHub webhook triggers
+- Automated builds
+- Automated tests
+- Deployment steps
+- Pipeline logging and troubleshooting
+- Jenkinsfile-based pipeline configuration
 
-## What I learned
+## 🛠️ Stack
 
-- How Jenkins pipelines work
-- Declarative vs scripted pipelines
-- Webhook integration with GitHub
-- Build artifacts and deployment
-- Logging and debugging pipeline issues
-- How automation saves manual work
+- Jenkins
+- Git / GitHub
+- HTML
+- Jenkinsfile
 
-## The pipeline file
+## Why I built it
 
-Everything is in `Jenkinsfile`. It's readable and well-commented so you can understand each step.
+This was a practical project to understand how code moves from a Git repository through an automated delivery pipeline instead of relying on manual deployment steps.
 
-## Next things to explore
+## Skills Practiced
 
-- Add docker image building to the pipeline
-- Deploy to a cloud platform automatically
-- Add more sophisticated testing stages
-- Implement rollback strategies
-- Add notifications (Slack, Email)
+- CI/CD fundamentals
+- Jenkins pipelines
+- Webhook integration
+- Build automation
+- Debugging pipeline failures
+- Git-based delivery workflows
 
----
+## Next Improvements
 
-Last updated: February 2026
+- Docker image build and push
+- Automated cloud deployment
+- Test reporting
+- Rollback strategy
+- Slack/email notifications
+
+## Author
+
+**Nageli Dharma Naidu**
+
+GitHub: https://github.com/NageliDharmaNaidu
